@@ -86,7 +86,10 @@ outputs/<folder_name>/
 
 Each image gets its own subfolder with meshes, visualizations, and JSON outputs.
 
-Running the Script
+## Running the Script
+
+**Make sure the virtual environment is activated before running the script.**
+
 ```bash
 python run_sam3d_body.py \
   --input_dir example_images \
@@ -107,7 +110,7 @@ Arguments
 
 --render_3d_vis : Try OpenGL-based 3D rendering (may fail on headless systems)
 
-Notes & Known Issues
+## Notes & Known Issues
 
 OpenGL-based rendering may fail on headless machines or some Windows setups.
 
