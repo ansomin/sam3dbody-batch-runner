@@ -40,21 +40,21 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Note:
+### Note:
 
 This installs Meta’s sam-3d-body library directly from GitHub into your Python environment.
 
-Hugging Face / Model Setup (Important)
+## Hugging Face / Model Setup (Important)
 
 SAM-3D-Body downloads model weights from Hugging Face.
 
 Please follow the official SAM-3D-Body installation instructions regarding:
 
-Hugging Face access
+* Hugging Face access
 
-Authentication (if required)
+* Authentication (if required)
 
-Model downloads
+* Model downloads
 
 👉 Refer to:
 https://github.com/facebookresearch/sam-3d-body
@@ -65,7 +65,7 @@ If Hugging Face authentication is required, make sure you are logged in:
 huggingface-cli login
 ```
 
-Input / Output Structure
+## Input / Output Structure
 
 Place images under:
 
@@ -98,28 +98,28 @@ python run_sam3d_body.py \
   --save_2d_vis
 ```
 
-Arguments
+### Arguments
 
---input_dir : Name of a folder inside ./inputs
+* --input_dir : Name of a folder inside ./inputs
 
---device : cpu or cuda
+* --device : cpu or cuda
 
---save_mesh : Save 3D mesh outputs (OBJ)
+* --save_mesh : Save 3D mesh outputs (OBJ)
 
---save_2d_vis : Save 2D skeleton overlays
+* --save_2d_vis : Save 2D skeleton overlays
 
---render_3d_vis : Try OpenGL-based 3D rendering (may fail on headless systems)
+* --render_3d_vis : Try OpenGL-based 3D rendering (may fail on headless systems)
 
 ## Notes & Known Issues
 
-OpenGL-based rendering may fail on headless machines or some Windows setups.
+* OpenGL-based rendering may fail on headless machines or some Windows setups.
 
-CUDA performance depends on PyTorch + driver compatibility.
+* CUDA performance depends on PyTorch + driver compatibility.
 
-For GPU usage, install a CUDA-enabled PyTorch build following:
+* For GPU usage, install a CUDA-enabled PyTorch build following:
 https://pytorch.org
 
-License & Attribution
+## License & Attribution
 
 This project is a lightweight wrapper around Meta’s SAM-3D-Body.
 All model code and weights are subject to the upstream project’s license.
